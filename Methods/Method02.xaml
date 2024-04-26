@@ -14,7 +14,7 @@
     </InArgument>
   </this:Method02.in_StrWorksheet>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1036,2703</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>946,2703</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -208,14 +208,14 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Sum" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,226" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
+      <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Sum" DisplayName="Add Data Column Sum" sap:VirtualizedContainerService.HintSize="530,226" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
         <ui:AddDataColumn.DataTable>
           <InArgument x:TypeArguments="sd:DataTable">
             <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">dt_DataTable</CSharpValue>
           </InArgument>
         </ui:AddDataColumn.DataTable>
       </ui:AddDataColumn>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1080" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table Sum" sap:VirtualizedContainerService.HintSize="530,1080" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
@@ -223,21 +223,9 @@
             </ActivityAction.Argument>
             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,876" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:Double" Name="doubleCellAValue">
-                  <Variable.Default>
-                    <Literal x:TypeArguments="x:Double" />
-                  </Variable.Default>
-                </Variable>
-                <Variable x:TypeArguments="x:Double" Name="doubleCellBValue">
-                  <Variable.Default>
-                    <Literal x:TypeArguments="x:Double" />
-                  </Variable.Default>
-                </Variable>
-                <Variable x:TypeArguments="x:Double" Name="doubleCellCValue">
-                  <Variable.Default>
-                    <Literal x:TypeArguments="x:Double" />
-                  </Variable.Default>
-                </Variable>
+                <Variable x:TypeArguments="x:Double" Default="0" Name="doubleCellAValue" />
+                <Variable x:TypeArguments="x:Double" Default="0" Name="doubleCellBValue" />
+                <Variable x:TypeArguments="x:Double" Default="0" Name="doubleCellCValue" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -324,9 +312,7 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_Worksheet">
             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">in_StrWorksheet</CSharpValue>
           </InArgument>
-          <InArgument x:TypeArguments="x:Boolean" x:Key="in_WorksheetHasHeaders">
-            <Literal x:TypeArguments="x:Boolean" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:Boolean" x:Key="in_WorksheetHasHeaders">False</InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="in_WorksheetRange">
             <Literal x:TypeArguments="x:String" Value="" />
           </InArgument>
