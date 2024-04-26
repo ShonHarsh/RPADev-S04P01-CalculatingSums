@@ -23,7 +23,7 @@
   </this:Read_ExcelToTable.in_WorksheetRange>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1036,3671</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>946,3671</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,6 +58,8 @@
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -141,7 +143,7 @@
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <Sequence sap2010:Annotation.AnnotationText="This workflow takes a file path as a string, a workrsheet name as a string, a worksheet range as a string and a boolean if headers exist for a Microsoft Excel document, reads the document, and retuns the data in a data table.  The entire sheet will be read if the range is blank.&#xD;&#xA;&#xD;&#xA;This process uses the Microsoft Excel activities." DisplayName="Sequence Initialization" sap:VirtualizedContainerService.HintSize="832,1238" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="This workflow takes a file path as a string, a workrsheet name as a string, a worksheet range as a string and a boolean if headers exist for a Microsoft Excel document, reads the document, and retuns the data in a data table.  The entire sheet will be read if the range is blank.&#xA;&#xA;This process uses the Microsoft Excel activities." DisplayName="Sequence Initialization" sap:VirtualizedContainerService.HintSize="832,1238" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="isValidFile" />
       </Sequence.Variables>
@@ -349,10 +351,10 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message RPADev-S04P01-CalculatingSums.Read_ExcelToTable.OperrationCompleted;" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+      <ui:LogMessage DisplayName="Log Message RPADev-S04P01-CalculatingSums.Read_ExcelToTable.OperationCompleted;" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
         <ui:LogMessage.Message>
           <InArgument x:TypeArguments="x:Object">
-            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">"RPADev-S04P01-CalculatingSums.Read_ExcelToTable.OperrationCompleted;"</CSharpValue>
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"RPADev-S04P01-CalculatingSums.Read_ExcelToTable.OperationCompleted;"</CSharpValue>
           </InArgument>
         </ui:LogMessage.Message>
       </ui:LogMessage>
