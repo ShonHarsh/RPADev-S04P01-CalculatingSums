@@ -4,12 +4,9 @@
   "description": "Calculate the sum in 2 Excel files\r\nCalculate the sum of the values from two columns in an Excel file in 3 ways. Create a workflow that adds the values on column A with values on column B and writes them in column C in different ways:\r\n\r\nKeeps the Excel open and writes the results in real time, row by row so you can see the changes;\r\nKeeps the Excel closed, set the column values in the memory DataTable and adds all the table to a new Excel files at once, in the end;\r\nCalculates the sum by using ",
   "main": "Main.xaml",
   "dependencies": {
-    "Library-Tools": "[1.0.1]",
-    "UiPath.Excel.Activities": "[2.23.2-preview]",
-    "UiPath.Mail.Activities": "[1.22.2]",
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
     "UiPath.System.Activities": "[24.3.1]",
-    "UiPath.Testing.Activities": "[24.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[24.2.2-preview]"
+    "UiPath.UIAutomation.Activities": "[24.4.2-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
